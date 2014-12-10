@@ -1,0 +1,10 @@
+#!/Volumes/Projects/B2G_Flame/gecko/testing/marionette/client/MARIONETTE_ENV/bin/python
+# EASY-INSTALL-ENTRY-SCRIPT: 'mozprofile==0.22','console_scripts','diff-profiles'
+__requires__ = 'mozprofile==0.22'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('mozprofile==0.22', 'console_scripts', 'diff-profiles')()
+    )

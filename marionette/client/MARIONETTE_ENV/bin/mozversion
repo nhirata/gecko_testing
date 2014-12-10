@@ -1,0 +1,10 @@
+#!/Volumes/Projects/B2G_Flame/gecko/testing/marionette/client/MARIONETTE_ENV/bin/python
+# EASY-INSTALL-ENTRY-SCRIPT: 'mozversion==1.1','console_scripts','mozversion'
+__requires__ = 'mozversion==1.1'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('mozversion==1.1', 'console_scripts', 'mozversion')()
+    )

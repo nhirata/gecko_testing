@@ -1,0 +1,10 @@
+#!/Volumes/Projects/B2G_Flame/gecko/testing/marionette/client/MARIONETTE_ENV/bin/python
+# EASY-INSTALL-ENTRY-SCRIPT: 'mozlog==2.8','console_scripts','structlog'
+__requires__ = 'mozlog==2.8'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('mozlog==2.8', 'console_scripts', 'structlog')()
+    )
